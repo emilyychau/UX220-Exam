@@ -6,21 +6,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
-<title>Question 1</title>
+<style>
+     .row {
+    display: flex;
+    }
+    
+    .column {
+    flex: 50%;
+    }
+</style>
+<title>Question 1</title> 
 </head>
 <!--Compare and contrast the following 2 forms:
 <form action="http://localhost:3002/send/" method="post"> ... </form>
 
 <form action="https://dry-bayou-18746.herokuapp.com/send/" method="post"> ... </form>
 
-Pay special attention to why one or the other won't work on github pages. Write a semantically formatted html file in q1.html that includes doctype, html, head, body, header, footer, main, h1 ("Post action attribute"), h2 ("http://localhost:3002/send/" and "https://dry-bayou-18746.herokuapp.com/send/") and p tags in the correct place. The paragraphs in the html file should contain whether each will work on github pages and why or why not.
+Pay special attention to why one or the other won't work on github pages. 
+Write a semantically formatted html file in q1.html that includes
+doctype, html, head, body, header, footer, main, h1 ("Post action attribute"), 
+h2 ("http://localhost:3002/send/" and "https://dry-bayou-18746.herokuapp.com/send/") 
+and p tags in the correct place. The paragraphs in the html file should contain 
+whether each will work on github pages and why or why not.
 
 Note: It is fine for you to just use the url of the action attribute in your level 2 headings.-->
 <body>
     <main>
-        <h1></h1>
-
-        <p></p>
+        <h1>Post Action Attribute</h1>
+        <div class="row">
+            <div class="column">
+                <h2>http://localhost:3002/send</h2>
+                <p>Using localhost:3002 as the set location of the action attribute would not work for this HTML form. It would collect the submitted form-data and push it to a file that is local on the host’s computer. Therefore, it will not show up on a published GitHub page without the host manually updating the collected responses.</p>
+            </div>
+            <div class="column">
+                <h2>https://dry-bayou-18746.herokuapp.com/send</h2>
+                <p> Since this page is publically accessible on the Internet, this web address acts as a direct server location for all the collected form-data into. On a Github page, the use of this action attribute in an HTML form would successfully work and send the collected form-data to the Heroku App platform.
+                </p>
+            </div>
+        </div>
     </main>
 </body>
 <footer>

@@ -1,4 +1,4 @@
-// updating year copyright
+// Updating year copyright
 
 class YearElement extends HTMLElement{
     connectedCallback(){
