@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+        <style>
+             .aAnswer {
+            color: darkred;
+            font-size: 2em;
+        }
+        </style>
+    <title>Question 2</title>
+    <script src="custom.js"></script>
 </head>
 <!--The following code is for a simple magic 8 ball. Change the code so that:
 a) before anything is typed in to the input there is a prompt in lighter text that says "ask me anything"
@@ -15,28 +25,7 @@ c) the answer has twice the normal height
 d) the answer is written in a handwriting font of your choosing from https://fonts.google.com-->
 <body>
     <h1>The magic 8 ball</h1>
-    <input /><br />
-    <x-magic />
-    <script>
-        class Magic8Ball extends HTMLElement{
-            connectedCallback(){
-                this.innerHTML = 
-`
-    <button id="question">Ask</button>
-    <p id="answer"></p>
-`
-                this.button = document.querySelector("#question");
-                this.button.addEventListener("click", ()=>{
-                    const answer = document.querySelector("#answer");
-                    const aAnswers=["yes", "definitely", "no"];
-                    const nAnswer = Math.floor(Math.random() * aAnswers.length);
-                    answer.innerHTML = aAnswers[nAnswer];
-                })
-            }
-        }
-
-        customElements.define("x-magic", Magic8Ball);
-    </script>
+    <input placeholder="Ask me Anything!"/><br/>
+    <x-magic>
 </body>
-
 </html>

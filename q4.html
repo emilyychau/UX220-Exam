@@ -3,14 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
+<style>
+    .row {
+    display: flex;
+    }
+    
+    .column {
+    flex: 50%;
+    }
+</style>
+<title>Question 4</title>
 </head>
 <!--List a total of 5 pros and cons of png related to jpg images. 
     Use a tag to enclose the 2 lists with appropriate level headings for a screen reader as though the whole document is on this subject. -->
 <body>
     <main>
-        <h1></h1>
-        <p></p>
+        <h1>Pros and Cons of .pngs and .jpgs</h1>
+        <div class="row">
+            <div class="column">
+                <h2>Pros of .pngs</h2>
+                <ul>
+                    <li>Transparency is supported</li>
+                    <li>Does not undergo lossy image compression, more detail can be stored in the file</li>
+                </ul>
+            </div>
+            <div class="column">
+                <h2>Cons of .pngs</h2>
+                <ul>
+                    <li>Cameras typically shoot photos in the .jpg image format</li>
+                    <li>Large file size</li>
+                    <li>Supports CMYK color modes, printing from .png is therefore difficult</li>
+                </ul>
+            </div>
+        </div>
     </main>
 </body>
 </html>
