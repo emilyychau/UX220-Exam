@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>
+    <style>
+        img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+        }
+    </style>
+<title>Question 5</title>
 </head>
 <!-- The snippet of html in q5.html produces different images for portrait and landscape orientations. Make the image accessible on mobile by:
 a) adding a tag to make it scale 1 to 1
@@ -15,14 +22,13 @@ c) providing text for a screen reader to read when it encounters the image
 d) providing an element that displays in the browser bar that a screen reader can also read to identify the tab of the browser
 
 e) fix an issue with the provided headings that are problematic for screen readers -->
-
 <body>
     <main>
         <h1>Responsive Image</h1>
         <figure>
             <picture>
                 <source srcset="readmeimages/400x600.png"
-                    media="(orientation: portrait)">
+                    media="(orientation: portrait)" alt="Sample responsive image, a grey rectangle with text inside">
                 <img src="readmeimages/728x200.png" />
             </picture>
             <figcaption>responsive placeholder image</figcaption>
